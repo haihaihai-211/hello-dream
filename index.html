@@ -1,24 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <title>this is dream!</title>
-  <meta http-equiv="X-UA-Comparible" content="IE=edge"
-  <meta name="viewport" content="wideth=device-width,initial-scale=1.0"
+  <meta charset="UTF-8" />
+  <title>我的世界 · 无限宇宙</title>
+
+  <!-- 简单样式，让页面好看点 -->
+  <style>
+    :root{
+      --grass:#6B9E3F;
+      --dirt:#8B6F47;
+      --stone:#5F5F5F;
+      --sky:#6CD5FF;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:"Microsoft YaHei",sans-serif;
+      line-height:1.7;
+      color:#333;
+      background:#f7f7f7;
+    }
+    header{
+      background:linear-gradient(135deg,var(--grass),var(--dirt));
+      color:#fff;
+      padding:60px 20px 40px;
+      text-align:center;
+    }
+    header h1{font-size:3em;margin-bottom:10px;}
+    header p{font-size:1.2em;opacity:.9;}
+    nav{
+      background:var(--stone);
+      text-align:center;
+      padding:10px 0;
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+    nav a{
+      color:#fff;
+      margin:0 15px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    nav a:hover{text-decoration:underline;}
+    .container{
+      max-width:1000px;
+      margin:0 auto;
+      padding:20px;
+    }
+    section{
+      background:#fff;
+      margin:30px 0;
+      padding:30px;
+      border-radius:8px;
+      box-shadow:0 2px 6px rgba(0,0,0,.05);
+    }
+    h2{color:var(--grass);margin-bottom:15px;}
+    .gallery{
+      display:flex;
+      flex-wrap:wrap;
+      gap:15px;
+      margin-top:15px;
+    }
+    .gallery img{
+      width:300px;
+      border-radius:4px;
+      cursor:pointer;
+      transition:transform .3s;
+    }
+    .gallery img:hover{transform:scale(1.03);}
+    footer{
+      text-align:center;
+      padding:20px 10px;
+      font-size:.9em;
+      color:#777;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello，dream！</h1>
-  <p>这是我做的第一个网页。</p>
+  <!-- 顶部大横幅 -->
+  <header>
+    <h1>我的世界</h1>
+    <p>探索、建造、生存——方块宇宙由你定义</p>
+  </header>
+
+  <!-- 导航锚点 -->
+  <nav>
+    <a href="#intro">游戏介绍</a>
+    <a href="#mode">玩法模式</a>
+    <a href="#feature">核心特色</a>
+    <a href="#gallery">游戏截图</a>
+  </nav>
+
+  <div class="container">
+    <!-- 1. 游戏介绍 -->
+    <section id="intro">
+      <h2>🎮 游戏介绍</h2>
+      <p>《我的世界》（Minecraft）是一款 3D 沙盒游戏，由 Mojang Studios 开发。玩家可在由方块构成的无限世界中<strong>挖掘、建造、探险、合成</strong>，没有固定目标，一切皆有可能。</p>
+      <ul>
+        <li>发售时间：2009 年 5 月（初代），2011 年 11 月（正式版）</li>
+        <li>平台：Windows / macOS / Linux、主机、移动端、Switch</li>
+        <li>全球销量：超 3 亿份（历史第一）</li>
+      </ul>
+    </section>
+
+    <!-- 2. 玩法模式 -->
+    <section id="mode">
+      <h2>🛠 玩法模式</h2>
+      <h3 style="margin-top:15px;color:var(--dirt)">生存模式</h3>
+      <p>血量、饥饿值有限，需要采集资源、合成工具、建造庇护所，抵御怪物。</p>
+
+      <h3 style="margin-top:15px;color:var(--dirt)">创造模式</h3>
+      <p>无限方块、自由飞行，专注于想象与建造，大型城市、红石计算机皆由此诞生。</p>
+
+      <h3 style="margin-top:15px;color:var(--dirt)">极限模式</h3>
+      <p>只有一次生命的生存，死亡即世界删除，真正的硬核挑战。</p>
+
+      <h3 style="margin-top:15px;color:var(--dirt)">冒险 & 旁观模式</h3>
+      <p>供地图作者与剧情玩家使用，可破坏/不可破坏方块由规则决定。</p>
+    </section>
+
+    <!-- 3. 核心特色 -->
+    <section id="feature">
+      <h2>✨ 核心特色</h2>
+      <ul>
+        <li><strong>无限世界：</strong>地图面积约为地球表面积的 8 倍</li>
+        <li><strong>红石电路：</strong>游戏内可搭建逻辑门、计数器、甚至 CPU</li>
+        <li><strong>模组生态：</strong>Java 版超 10 万款模组，玩法无限扩展</li>
+        <li><strong>多人联机：</strong>局域网联机、自建服务器、大型小游戏网络</li>
+        <li><strong>教育版：</strong>被全球 100+ 国家用于编程、化学、历史教学</li>
+      </ul>
+    </section>
+
+    <!-- 4. 游戏截图（免版权图床示例） -->
+    <section id="gallery">
+      <h2>📸 游戏截图</h2>
+      <p>以下截图均可免费使用（来自 Unsplash & Pexels）。</p>
+      <div class="gallery">
+        <!-- 点击图片跳转到原图网站 -->
+        <a href="https://www.pexels.com/zh-cn/photo/minecraft" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1611149951845-4f5c2b3a7c59?auto=format&fit=crop&w=800&q=60" alt="中世纪城堡">
+        </a>
+
+        <a href="https://www.pexels.com/zh-cn/photo/minecraft" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1611149951845-4f5c2b3a7c59?auto=format&fit=crop&w=800&q=60" alt="地下矿洞">
+        </a>
+
+        <a href="https://www.pexels.com/zh-cn/photo/minecraft" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1611149951845-4f5c2b3a7c59?auto=format&fit=crop&w=800&q=60" alt="天空之城">
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- 页脚 -->
+  <footer>
+    © 2025 我的世界粉丝站 | 本站为学习演示，图片与商标归 Mojang Studios 所有
+  </footer>
+
+  <!-- 小彩蛋：点击标题掉落方块 -->
+  <script>
+    document.querySelector("header h1").onclick = () => {
+      const b = document.createElement("div");
+      b.style.cssText = `
+        position:fixed;top:-30px;left:${Math.random()*100}%;
+        width:30px;height:30px;background:#6B9E3F;
+        animation:fall 1s linear;
+      `;
+      document.body.appendChild(b);
+      b.addEventListener("animationend",()=>b.remove());
+    };
+    const style = document.createElement("style");
+    style.textContent = `@keyframes fall{to{transform:translateY(110vh);}}`;
+    document.head.appendChild(style);
+  </script>
 </body>
 </html>
-<body style="background:#f0f0f0; font-family:sans-serif;">
-  <h1 style="color:#0066cc;">欢迎来到我的主页</h1>
-<img src="https://cn.bing.com/images/search?view=detailV2&ccid=1O%2bm8PSj&id=132772049345B4AB8094A72775EFE7FE57C127B8&thid=OIP.1O-m8PSjjX6xa50c-5ZYVwHaEH&mediaurl=https%3a%2f%2fts1.tc.mm.bing.net%2fth%2fid%2fR-C.d4efa6f0f4a38d7eb16b9d1cfb965857%3frik%3duCfBV%252f7n73Unpw%26riu%3dhttp%253a%252f%252fn.sinaimg.cn%252fsinakd20210604ac%252f586%252fw1919h1067%252f20210604%252f255c-kracxeq2677649.jpg%26ehk%3dzx19Div%252fO62S7SVrfSKlTxo5LrlbAX3WKD4w9hZxNWg%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=1067&expw=1919&q=dream&FORM=IRPRST&ck=8746127C8B49BDFBC06B89B0B061DD56&selectedIndex=0&itb=0" alt="cn.bing.com" width="304" height="228">
-  <p>今天是 2025 年 10 月 15 日，10.16。</p>
-
-</body>
-
-
-
-
-
